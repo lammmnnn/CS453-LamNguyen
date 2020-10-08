@@ -108,8 +108,8 @@ int check_if_sorted(int A[], int n)
 
 int main(int argc, char **argv) {
 
-	if (argc < 3) { // there must be at least 2 command-line arguments
-			fprintf(stderr, "Usage: %s <input size> <thread num> [<seed>] \n", argv[0]);
+	if (argc < 2) { // there must be at least 2 command-line arguments
+			fprintf(stderr, "Usage: %s <input size> [<thread num>] [<seed>] \n", argv[0]);
 			exit(1);
 	}
 
@@ -129,7 +129,11 @@ int main(int argc, char **argv) {
 
 	// sort the input (and time it)
 	start_time = getMilliSeconds();
-	paralel_mergesort(A,1,n,atoi(argv[2]));
+  if (argc == 2) {
+    serial_mergesort(A,1,n);
+  } else {
+	  paralel_mergesort(A,1,n,atoi(argv[2]));
+  }
 	sorting_time = getMilliSeconds() - start_time;
 
 	// print results if correctly sorted otherwise cry foul and exit
