@@ -1,10 +1,16 @@
-# P1 Mergesort - Lam Nguyen
+# P1 Mergesort
+
+- Author: Lam Nguyen
+- CS453
 
 ## Overview
 
 In this project, a multithreaded version of the
 mergesort algorithm using the pthread library will be implemented.
 
+## Run the code
+
+$make then $./mytests <# of elements> [<number of thread>] [<seed>] 
 
 ## Learning Objectives
 
