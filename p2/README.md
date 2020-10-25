@@ -15,8 +15,10 @@ We are using two libraries in this project. The original linked list library lib
 ## Run the code
 
 $export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../list/lib:./lib
-$make
-$./pc [poolsize] [items] [# of producers] [# of consumers] [sleeptime]
+
+Then $make
+
+Then $./pc [poolsize] [items] [# of producers] [# of consumers] [sleeptime]
 
 ## Testing
 I ran the test with ./pc 100 400 4 8 100 multiple times and it worked correctly.
