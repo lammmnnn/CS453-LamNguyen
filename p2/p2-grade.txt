@@ -1,0 +1,10 @@
+## Grade: 100/100
+
+- [10 pts] Compiling	no warnings, no errors. Originally I had trouble compiling the code, but once I created the lib and include two directories, it works. 10/10
+	- Each compiler warning will result in a 3 point deduction.
+	- You are not allowed to suppress warnings
+
+- [80 pts] Functional Requirements: single queue monitor	all the tests passed. 80/80
+
+- [10 pts] Documentation: README.md file	sufficient documentation. 10/10
+
