@@ -10,9 +10,9 @@ In this assignment, we will write a simple character driver called booga.
 ## Run the code
 
 $make 
-$sudo ./booga_load
-$./test-booga  <minor number> <buffersize> <read|write>
-$sudo ./booga_unload 
+then $sudo ./booga_load
+then $./test-booga  <minor number> <buffersize> <read|write>
+then $sudo ./booga_unload 
 
 ## Plan for testing
 
